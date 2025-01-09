@@ -58,7 +58,7 @@ body {
     height: 100vh;
     background-size:cover;
     background-position: center;
-    background-image: url("https://i.ibb.co/HhPjXqy/x.png");
+    /*background-image: url("https://i.ibb.co/HhPjXqy/x.png");*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,7 +103,14 @@ i:hover {
   --fa-primary-color: #ff0066;
   --fa-secondary-color: #ff0066;
 }
-
+#myVid {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -2;
+}
 #linktree {text-decoration-color: rgba(255, 0, 0, 0.856); text-decoration: dotted;text-decoration-line: underline;}
 #linktree:hover {text-decoration-color: rgba(0, 26, 255, 0.74);}
 #linktree:visited {text-decoration-color: rgba(255, 0, 0, 0.856);}
@@ -111,6 +118,8 @@ i:hover {
     </style>
 </head>
 <body>
+  <video autoplay muted loop id="myVid">
+  <source src="vid.mp4" type="video/mp4"></video>
   <h1 id="maintext" class="ubuntu-regular txt">Coming Soon…!</h1>
   <p class="lawt ubuntu-regular">Made by <a id="linktree" href="https://linktr.ee/HimalErangana">Himal</a> with <i class="fa-duotone fa-solid fa-heart-pulse fa-shake" style="--fa-primary-color: #ff0066; --fa-secondary-color: #ff0066;"></i></p>
 </body>
