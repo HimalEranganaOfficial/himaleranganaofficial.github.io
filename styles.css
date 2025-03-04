@@ -874,6 +874,19 @@ footer a:hover, footer a:active {
     }
 
     /* Portfolio Section */
+
+    #portfolio-tiles {
+        /* Scroll-driven animation */
+        --tile-top-offset: 3vh;
+        padding-bottom: calc(var(--tiles-num) * var(--tile-top-offset));
+    }
+
+    .tile {
+        /* Scroll-driven animation */
+        --tile-top-offset: 3vh;
+        padding-top: calc(var(--t-number) * var(--tile-top-offset));
+    }
+
     .tile__content-description > h2 {
         font-size: var(--h3-size-mobile);
     }
@@ -885,12 +898,25 @@ footer a:hover, footer a:active {
         overflow: clip;
         display: -moz-box;
         display: -webkit-box;
-        line-clamp: 7;
-        line-clamp: 7;
-        -webkit-line-clamp: 7;
+        line-clamp: 6;
+        line-clamp: 6;
+        -webkit-line-clamp: 6;
         box-orient: vertical;
         -webkit-box-orient: vertical;
     }
+
+    .tile__content-description {
+        /* Normal Styling */
+        min-height: 50vh;
+        max-height: 50vh;
+        height: 50vh;
+    }
+
+    .tile__content {
+        /* Normal Styling */
+        height: 50vh;
+    }
+
     .section-button > a {
         padding: var(--h4-size) var(--h3-size);
     }
